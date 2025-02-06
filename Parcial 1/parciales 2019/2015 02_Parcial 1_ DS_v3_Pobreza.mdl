@@ -1,0 +1,132 @@
+{UTF-8}
+Enfermedades  = A FUNCTION OF( Calidad de vida)
+	~	
+	~		|
+
+Gastos medicos  = A FUNCTION OF( Enfermedades)
+	~	
+	~		|
+
+Productividad  = A FUNCTION OF( Enfermedades)
+	~	
+	~		|
+
+Acumulación de capital  = A FUNCTION OF( "Diferencia (Ingresos-Egresos)")
+	~	
+	~		|
+
+"Diferencia (Ingresos-Egresos)"  = A FUNCTION OF( Egresos,Ingresos)
+	~	
+	~		|
+
+Oportunidades de mejorar la calidad de vida  = A FUNCTION OF( Acumulación de capital\
+		)
+	~	
+	~		|
+
+Calidad de vida  = A FUNCTION OF( Oportunidades de mejorar la calidad de vida)
+	~	
+	~		|
+
+Ingresos  = A FUNCTION OF( Productividad)
+	~	
+	~		|
+
+Egresos  = A FUNCTION OF( Costo de suplir las Necesidades Basicas NB,Gastos medicos)
+	~	
+	~		|
+
+Costo de suplir las Necesidades Basicas NB=A FUNCTION OF(Costo de suplir las Necesidades Basicas NB\
+		) ~~|
+Costo de suplir las Necesidades Basicas NB=
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,80,0
+10,1,Calidad de vida,525,78,50,11,8,3,0,0,0,0,0,0
+10,2,Oportunidades de mejorar la calidad de vida,382,184,82,19,8,3,0,0,0,0,0,0
+10,3,Productividad,827,243,44,11,8,3,0,0,0,0,0,0
+10,4,"Diferencia (Ingresos-Egresos)",516,421,65,25,8,131,0,0,0,0,0,0
+10,5,Ingresos,784,421,28,11,8,3,0,0,0,0,0,0
+10,6,Egresos,682,360,26,11,8,3,0,0,0,0,0,0
+10,7,Costo de suplir las Necesidades Basicas NB,552,231,57,35,8,131,0,0,0,0,0,0
+10,8,Gastos medicos,711,208,50,11,8,3,0,0,0,0,0,0
+1,9,2,1,1,0,43,0,2,65,0,-1--1--1,|12||0-0-0,1|(423,119)|
+1,10,5,4,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(679,454)|
+1,11,6,4,1,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(652,399)|
+1,12,8,6,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(707,295)|
+1,13,7,6,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(643,260)|
+1,14,3,5,1,0,43,0,2,65,0,-1--1--1,|12||0-0-0,1|(830,329)|
+12,15,0,577,318,20,20,4,7,0,0,-1,0,0,0
+R1
+12,16,0,776,302,20,20,4,7,0,0,-1,0,0,0
+R2
+12,17,0,575,360,41,18,8,135,0,0,-1,0,0,0
+Ciclo de egresos
+12,18,0,773,349,41,18,8,135,0,0,-1,0,0,0
+Ciclo de ingresos
+10,19,Acumulación de capital,395,323,52,19,8,3,0,0,0,0,0,0
+1,20,4,19,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(431,378)|
+1,21,19,2,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(373,249)|
+10,22,Enfermedades,678,127,45,11,8,3,0,0,0,0,0,0
+1,23,1,22,1,0,45,0,2,193,0,-1--1--1,|12||0-0-0,1|(618,86)|
+1,24,22,8,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(698,155)|
+1,25,22,3,1,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(762,161)|
+///---\\\
+:L<%^E!@
+9:Current
+22:$,Dollar,Dollars,$s
+22:Hour,Hours
+22:Month,Months
+22:Person,People,Persons
+22:Unit,Units
+22:Week,Weeks
+22:Year,Years
+22:Day,Days
+23:0
+15:0,0,0,0,0,0
+19:80,0
+27:2,
+34:0,
+5:Productividad
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+42:1
+24:0
+25:0
+26:0
